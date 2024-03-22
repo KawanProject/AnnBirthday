@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("./ironman2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.main {
+    position: relative;
+    left: 5%;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #000);
+    line-height: 60px;
+    outline: none;
+    animation: animation 5s linear infinite;
+}
+
+@keyframes animation {
+    0%,18%,21%,50.3%,60%,64.5%,82%,90.3%,94% {
+        color: #333030;
+        text-shadow: none;
+    }
+    17.9%,21.4%,31%,52%,60.7%,66%,80.5%,89.6%,92.2%,100% {
+        color: #fff;
+        text-shadow: 0 0 010px #ff3131,
+        0 0 20px #ff3131,
+        0 0 40px #ff3131,
+        0 0 80px #ff3131,
+        0 0 169px #ff3131
+    }
+}
+
